@@ -2,6 +2,8 @@
 
 This is a simple script to export the bibliographic metadata from Zotero into a Tana paste format, which can then be pasted directly into your Tana graph. I've tried to build it such that even a non-programmer can make many small tweaks to the resulting format to fit their specific needs. The base export as stored in this repository is principally based upon [Tanarian Brain](https://www.cortexfutura.com/tanarian-brain/) and the work of [CortexFutura](https://twitter.com/cortexfutura/).
 
+One quick warning... there is an upper limit to the number of characters Tana paste can handle in a single paste event. It's a quite large number, and I usually only add one or two entires at a time to Tana. So, you probably won't run into any problems. However, if you have dozens or hundreds of items you want to add to Tana, you should work in batches of a handful at a time. I doubt you'll have any issues pasting 5-10 entries at a time, but 50-100+ entries is likely to overwhelm what Tana can process in one go.
+
 
 ## Installation
 
@@ -57,7 +59,7 @@ Rinse and repeat for every tag, status, and field listed in the exporter file. T
 Now, when you select an item or items in your library, you'll see the option "Copy as Tana Metadata Export" in the Edit menu. The shortcut on macOS is ⌘ + ⇧ + C (command + shift + C).
 
 * Select the item or items you want to add to Tana
-* Copy as Tana Metadata Export via the edit menu or shortcut
+* Copy as Tana Metadata Export (⌘ + ⇧ + C) from your Zotero library
 * Paste (⌘ + V) into Tana
 
 
