@@ -24,6 +24,11 @@ I started with the [Tanarian Brain](https://www.cortexfutura.com/tanarian-brain/
 **IMPORTANT:** Hashtags, brackets, etc. will be added automatically to ensure consistency. These only require the text name of the node and nothing else. Emojis should be included as well if they're part of the node name in your graph. This is why we used "src" NOT "#src" in the example above.
 
 
+### Modify the list of ignored topics
+
+Zotero tags are translated as topics for the Tana export. However, there are often some Zotero tags that are purely internal. For example, `_tablet` and `_tablet_modified` are used by ZotFile out of the box to manage documents moved to shared drives or mobile devices for consumption. Simply add any tags you want to have ignored to the array `ignoredTopics[]`. Any tags that match this list will be ignored (i.e., NOT exported Tana) when generating the list of topics.
+
+
 ### Optional: Disambiguation configuration
 
 I highly recommend you disambiguate your Tana supertags and fields by adding explicit IDs for each. This will prevent accidentally creating duplicate supertags/fields, especially when working across multiple graphs in Tana. It's quite simple to add to your local copy of the exporter.
