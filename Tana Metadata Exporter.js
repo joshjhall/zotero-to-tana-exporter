@@ -1089,6 +1089,7 @@ function doExport() {
           writeTags(item.tags);
           writeAuthors(item.creators);
           writePublicationDate(item.date);
+          writeDOI(item.DOI);
           writeConference(item.conferenceName);
           break;
         default:
