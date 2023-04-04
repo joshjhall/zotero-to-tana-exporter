@@ -966,7 +966,7 @@ function doExport() {
           writeURL(item.url);
           break;
         case "letter":
-          writeBase(item.caseName, letterTag, toReadStatus);
+          writeBase(item.title, letterTag, toReadStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
           writeTags(item.tags);
@@ -978,7 +978,7 @@ function doExport() {
         case "attachment":
         case "annotation":
         case "computerProgram":
-          writeBase(item.caseName, letterTag, toReadStatus);
+          writeBase(item.title, letterTag, toReadStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
           writeTags(item.tags);
@@ -986,7 +986,7 @@ function doExport() {
           writeURL(item.url);
           break;
         case "instantMessage":
-          writeBase(item.caseName, instantMessageTag, toReadStatus);
+          writeBase(item.title, instantMessageTag, toReadStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
           writeTags(item.tags);
@@ -994,7 +994,7 @@ function doExport() {
           writeDate(item.date);
           break;
         case "email":
-          writeBase(item.caseName, emailTag, toReadStatus);
+          writeBase(item.title, emailTag, toReadStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
           writeTags(item.tags);
@@ -1002,7 +1002,7 @@ function doExport() {
           writeDate(item.date);
           break;
         case "map":
-          writeBase(item.caseName, mapTag, toReadStatus);
+          writeBase(item.title, mapTag, toReadStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
           writeTags(item.tags);
@@ -1013,7 +1013,7 @@ function doExport() {
           writeLocation(item.place);
           break;
         case "patent":
-          writeBase(item.caseName, patentTag, toReadStatus);
+          writeBase(item.title, patentTag, toReadStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
           writeTags(item.tags);
@@ -1023,7 +1023,7 @@ function doExport() {
           writePatentNumber(item.patentNumber);
           break;
         case "interview":
-          writeBase(item.caseName, interviewTag, toWatchStatus);
+          writeBase(item.title, interviewTag, toWatchStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
           writeTags(item.tags);
@@ -1034,7 +1034,7 @@ function doExport() {
           writeURL(item.url);
           break;
         case "preprint":
-          writeBase(item.caseName, preprintTag, toReadStatus);
+          writeBase(item.title, preprintTag, toReadStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
           writeTags(item.tags);
@@ -1043,7 +1043,7 @@ function doExport() {
           break;
         case "encyclopediaArticle":
         case "dictionaryEntry":
-          writeBase(item.caseName, encyclopeidaArticleTag, toReadStatus);
+          writeBase(item.title, encyclopeidaArticleTag, toReadStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
           writeTags(item.tags);
@@ -1053,7 +1053,7 @@ function doExport() {
           writePublisher(item.publisher);
           break;
         case "radioBroadcast":
-          writeBase(item.caseName, radioBroadcastTag, toListenStatus);
+          writeBase(item.title, radioBroadcastTag, toListenStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
           writeTags(item.tags);
@@ -1064,7 +1064,7 @@ function doExport() {
           writeRadioNetwork(item.network);
           break;
         case "tvBroadcast":
-          writeBase(item.caseName, tvBroadcastTag, toWatchStatus);
+          writeBase(item.title, tvBroadcastTag, toWatchStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
           writeTags(item.tags);
@@ -1076,14 +1076,14 @@ function doExport() {
           writeDate(item.date);
           break;
         case "statute":
-          writeBase(item.caseName, statuteTag, toReadStatus);
+          writeBase(item.title, statuteTag, toReadStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
           writeTags(item.tags);
           writeAuthors(item.creators);
           break;
         case "conferencePaper":
-          writeBase(item.caseName, conferencePaperTag, toReadStatus);
+          writeBase(item.title, conferencePaperTag, toReadStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
           writeTags(item.tags);
