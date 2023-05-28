@@ -8,7 +8,7 @@
   "maxVersion": "",
   "priority": 200,
   "inRepository": false,
-  "lastUpdated": "2023-03-31 - 10:20"
+  "lastUpdated": "2023-05-28 - 15:00"
 }
 
 // NOTE: This is explicitly designed around the Tanarian Brain by Lukas Kawerau.
@@ -182,6 +182,7 @@ function doExport() {
   const conferencePaperTag = tag("conference paper");
   const conferenceTag = tag("conference");
   const countryTag = tag("country");
+  const softwareTag = tag("software");
 
   // Constants describing source status options
   const toReadStatus = link("📚 To Read");
@@ -977,7 +978,6 @@ function doExport() {
         case "manuscript":
         case "attachment":
         case "annotation":
-        case "computerProgram":
           writeBase(item.title, letterTag, toReadStatus);
           writeCitationKey(item.citationKey);
           writeZoteroLink(item.key, item.libraryID);
@@ -985,6 +985,13 @@ function doExport() {
           writePublisher(item.publisher);
           writeURL(item.url);
           break;
+        case "computerProgram":
+          writeBase(item.title, softwareTag, toReadStatus);
+          writeCitationKey(item.citationKey);
+          writeZoteroLink(item.key, item.libraryID);
+          writeTags(item.tags);
+          writePublisher(item.publisher);
+          writeURL(item.url);
         case "instantMessage":
           writeBase(item.title, instantMessageTag, toReadStatus);
           writeCitationKey(item.citationKey);
