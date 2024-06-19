@@ -12,7 +12,7 @@ One quick warning... there is an upper limit to the number of characters Tana pa
 
 ## Installation
 
-* Cloen or download this git repository
+* Clone or download this git repository
 * Copy/move the `Tana Metadata Exporter.js` to your `./translators` directory for Zotero. The exact location will depend upon your Zotero installation and operating system. The default location on macOS is `~/Zotero/translators`.
 * Open Zotero. NOTE: If Zotero is already open, you'll need to close and re-open it for the new translator to become available.
 * Open Zotero Settings => Export. Select "Tana Metadata Export" from the "Item Format" dropdown. Leave the "Note Format" as "Markdown + Rich Text."
